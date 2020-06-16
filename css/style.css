@@ -1,26 +1,104 @@
 body{
-  background-color: #f4eeff;
+  font-family: "Abel", sans-serif;
+}
+/* Title */
+#title{
+  color: #fff;
 }
 
-hr{
-  border-color: lightgray;
-  border-width: 10px;
-  border-style: dotted none none;
-  width: 5%;
+.background-website {
+  background-image: url(C:/Users/aldoh/Documents/Atom/WebDevelopment/MyCV/images/sea.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  filter: grayscale(40%);
 }
 
-img{
-  height: 200px;
+.container-fluid{
+  padding: 1% 15% 7%;
 }
 
-h1{
-  color: #3da4ab;
+.navbar{
+  font-family: "Raleway", serif;
 }
 
-h3{
-  color: #3da4ab;
+.title-presentation{
+  margin: 5% 15% 0;
+  text-align: center;
+  border: 2px #fff solid;
+  padding: 15px 15px 45px;
+  font-family: "Raleway", serif;
 }
 
-.circular{
+.title-image{
   border-radius: 100%;
+  width: 50%;
+  filter: grayscale(0);
+}
+
+.title-career{
+margin: 5% 0;
+padding: 0 10% 0 15%;
+}
+
+.title-text{
+  padding-right: 25%;
+}
+/* Expertise */
+
+#expertise{
+  background-color: #f7f7f7;
+  color: #393e46;
+  padding: 2%;
+}
+
+.expertise-text{
+  text-align: center;
+  margin: 2rem;
+}
+
+.expertise-description{
+  text-align: left;
+  margin: 2rem;
+  padding: 1rem;
+}
+
+.fa-python, .fa-database, .fa-code, .fa-r-project, .fa-capsules, .fa-virus{
+  font-size: 2.5rem;
+  padding: 1.5rem;
+  color: #84a9ac;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+  outline: black;
+  color: #000;
+}
+
+/* About */
+#about{
+  padding: 2%;
+  background-color: #84a9ac;
+}
+
+.about-title{
+  text-align: center;
+}
+
+/* Blog and notes */
+#blog-notes{
+  padding: 2%;
+}
+
+.blog-notes-title{
+  text-align: center;
+}
+
+/* Footer */
+#footer{
+  text-align: center;
+}
+
+.fa-linkedin-in, .fa-github, .fa-instagram, .fa-envelope{
+  font-size: 1.5rem;
+  padding: 0 15px;
 }

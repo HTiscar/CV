@@ -3,32 +3,238 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Hipolito's CV</title>
-  <link rel="stylesheet" href="css\style.css">
+  <title>MyCV</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <!-- Boostrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!-- Data Ballon -->
+  <link rel="stylesheet" href="https://unpkg.com/balloon-css/balloon.min.css">
+  <!-- Custom Style -->
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-<table>
-  <tr>
-    <td><img class="circular" src="https://media-exp1.licdn.com/dms/image/C4E03AQH_dFNfH70Q-g/profile-displayphoto-shrink_400_400/0?e=1596067200&v=beta&t=0yNHrDbGMs_9uI__3XODD5RAWPs8eM4X4GVrxhSlgl4" alt="hipolito-foto-perfil"></td>
-    <td><h1>Hipolito Ortiz</h1>
-    <h4><em>Licenciado en Biotecnología Genómica</em></h3>
-    <p>Cíentifico de datos y desarrollador de aplicaciones.</p> </td>
-  </tr>
-</table>
+  <div class="container-fluid">
+    <section id="main">
+      <div class="main-img">
+        <img class="main-img" src="https://media-exp1.licdn.com/dms/image/C4E03AQH_dFNfH70Q-g/profile-displayphoto-shrink_400_400/0?e=1597881600&v=beta&t=6cVJmf1vzy2X4bgo2pMTrauOj6eWGvfemjigc7XJ5Ro" alt="profile-img">
+      </div>
+        <hr>
+        <h1 style="text-align:center;">HIPOLITO ORTIZ</h1>
+        <hr>
 
-  <hr>
-  <h3>Educación</h3>
-    <ul>
-      <li>Universidad Autónoma de Nuevo León</li>
-      <li>Departamento de Ciencia de Datos</li>
-    </ul>
-  <h3>Intereses</h3>
-  <ol>
-    <li>Libros</li>
-    <li>Natación</li>
-    <li>Videojuegos</li>
-  </ol>
+      <div class="main-icons">
+        <p><i class="fas fa-user"></i></p>
+      </div>
+      <div class="main-content">
+        <p>Account information</p>
+        <hr>
+      </div>
+      <div class="main-icons">
+        <p><i class="fas fa-phone"></i></p>
+      </div>
+      <div class="main-content">
+        <p>Mobile: (+52) 271-102-7061</p>
+        <hr>
+      </div>
+      <div class="main-icons">
+        <p><i class="fas fa-envelope"></i></p>
+      </div>
+      <div class="main-content">
+        <p>Email: <a href="#">hipolitoortizt@gmail.com</a></p>
+        <hr>
+      </div>
+      <div class="main-icons">
+        <p><i class="fas fa-language"></i></p>
+      </div>
+      <div class="main-content">
+        <p>Language</p>
+        <ul>
+          <li><img src="images/flag-spain.png" alt="flag-spain" class="main-flags">Spanish</li>
+          <li><img src="images/flag-uk.png" alt="flag-uk" class="main-flags">English <button aria-label="Whats up!" data-balloon-pos="up"><i class="fas fa-info-circle"></i></button></li>
+          <li><img src="images/flag-france.png" alt="flag-france" class="main-flags">French <button aria-label="Whats up!" data-balloon-pos="up"><i class="fas fa-info-circle"></i></button></li>
+          <li><img src="images/flag-germany.png" alt="flag-germany" class="main-flags">German <button aria-label="Whats up!" data-balloon-pos="up"><i class="fas fa-info-circle"></i></button></li>
+        </ul>
+        <hr>
+      </div>
+      <div class="main-icons">
+        <p><i class="far fa-calendar-check"></i></p>
+      </div>
+      <div class="main-content">
+        <p>Skills</p>
+      </div>
+      <div class="main-skills">
+        <div id="carouselSkills" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <h4><i class="fas fa-database"></i> Data Science</h4>
+              <ul style="">
+                <li> R Programming <em id="rValue">Value</em>%<br>
+                  <div class="slidecontainer"><input type="range" min="1" max="100" value="95" class="slider" id="myRangeR"></div>
+                </li>
+                <li> Python <em id="pValue">Value</em>%<br>
+                  <div class="slidecontainer"><input type="range" min="1" max="100" value="75" class="slider" id="myRangeP"></div>
+                </li>
+                <li> Data Mining <em id="dmValue">Value</em>%<br>
+                  <div class="slidecontainer"><input type="range" min="1" max="100" value="80" class="slider" id="myRangeDM"></div>
+                </li>
+                <li> D. Engineering <em id="deValue">Value</em>%<br>
+                  <div class="slidecontainer"><input type="range" min="1" max="100" value="60" class="slider" id="myRangeDE"></div>
+                </li>
+                <li> MS Office <em id="msValue">Value</em>%<br>
+                  <div class="slidecontainer"><input type="range" min="1" max="100" value="95" class="slider" id="myRangeMS"></div>
+                </li>
+              </ul>
+            </div>
+            <div class="carousel-item">
+              <h4><i class="fas fa-dna"></i> Genomics</h4>
+              <ul style="">
+                <li> Bioinformatics <em id="biValue">Value</em>%<br>
+                  <div class="slidecontainer"><input type="range" min="1" max="100" value="95" class="slider" id="myRangeBI"></div>
+                </li>
+                <li> Epidemiology <em id="eValue">Value</em>%<br>
+                  <div class="slidecontainer"><input type="range" min="1" max="100" value="75" class="slider" id="myRangeE"></div>
+                </li>
+                <li> Biostadistics <em id="mbValue">Value</em>%<br>
+                  <div class="slidecontainer"><input type="range" min="1" max="100" value="80" class="slider" id="myRangeMB"></div>
+                </li>
+                <li> Pharmacology <em id="pgValue">Value</em>%<br>
+                  <div class="slidecontainer"><input type="range" min="1" max="100" value="60" class="slider" id="myRangePG"></div>
+                </li>
+                <li> Research <em id="reValue">Value</em>%<br>
+                  <div class="slidecontainer"><input type="range" min="1" max="100" value="95" class="slider" id="myRangeRE"></div>
+                </li>
+              </ul>
+            </div>
+            <div class="carousel-item">
+              <h4><i class="fas fa-code"></i> Web Design</h4>
+              <ul style="">
+                <li> Javascript <em id="jsValue">Value</em>%<br>
+                  <div class="slidecontainer"><input type="range" min="1" max="100" value="95" class="slider" id="myRangeJS"></div>
+                </li>
+                <li> HTML <em id="htValue">Value</em>%<br>
+                  <div class="slidecontainer"><input type="range" min="1" max="100" value="75" class="slider" id="myRangeHT"></div>
+                </li>
+                <li> CSS <em id="csValue">Value</em>%<br>
+                  <div class="slidecontainer"><input type="range" min="1" max="100" value="80" class="slider" id="myRangeCS"></div>
+                </li>
+                <li> Boostrap <em id="btValue">Value</em>%<br>
+                  <div class="slidecontainer"><input type="range" min="1" max="100" value="60" class="slider" id="myRangeBT"></div>
+                </li>
+                <li> Adobe Suite <em id="asValue">Value</em>%<br>
+                  <div class="slidecontainer"><input type="range" min="1" max="100" value="95" class="slider" id="myRangeAS"></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselSkills" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselSkills" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="experience">
+      <div class="row experience-container">
+        <div class="col-2-lg experience-icon">
+          <p><i class="fas fa-briefcase"></i></p>
+        </div>
+        <div class="col-10-lg experience-content">
+          <h2>Work Experience</h2>
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+          <hr>
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+          <hr>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="row education-container">
+        <div class="col-2-lg education-icon">
+          <p><i class="fas fa-university"></i></p>
+        </div>
+        <div class="col-10-lg education-content">
+          <h2>Education</h2>
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+          <hr>
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+          <hr>
+        </div>
+      </div>
+    </section>
+
+    <section id="interest">
+      <div class="row interest-container">
+        <div class="col-2-lg interest-icon">
+          <p><i class="fas fa-coffee"></i></p>
+        </div>
+        <div class="col-10-lg interest-content">
+          <h2>Interest</h2>
+        </div>
+        <div class="interest-special">
+          <p>
+            <i class="fas fa-book interest-activity" onmouseenter="changeActivityReading()"></i>
+            <i class="fas fa-plane-departure interest-activity" onmouseenter="changeActivityTraveling()"></i>
+            <i class="fas fa-video interest-activity" onmouseenter="changeActivityVideo()"></i>
+            <i class="fas fa-swimming-pool interest-activity" onmouseenter="changeActivitySwimming()"></i>
+            <i class="fas fa-blog interest-activity" onmouseenter="changeActivityBlog()"></i>
+          </p>
+          <h3>Reading</h3>
+        </div>
+        <div class="interest-content">
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+          <hr>
+        </div>
+      </div>
+    </section>
+
+    <section id="socials">
+      <div class="row social-container">
+        <div class="col-2-lg social-icon">
+          <p><i class="fas fa-hashtag"></i></p>
+        </div>
+        <div class="col-10-lg social-content">
+          <h2>Social Media</h2>
+        </div>
+        <div class="social-special">
+          <p>
+            <a href="https://www.linkedin.com/in/hip%C3%B3lito-ortiz-tiscare%C3%B1o-7a9301152/"><i class="fab fa-linkedin-in social-activity"></i></a>
+            <a href="https://github.com/HTiscar"><i class="fab fa-github social-activity"></i></a>
+            <a href="https://codepen.io/HipolitoOrtiz"><i class="fab fa-codepen social-activity"></i></a>
+            <a href="#"><i class="fab fa-instagram social-activity"></i></a>
+            <a href="https://www.goodreads.com/user/show/63145613-hip-lito-ortiz"><i class="fab fa-goodreads social-activity"></i></a>
+          </p>
+        </div>
+        <hr>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Boostrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/4c56465ddc.js" crossorigin="anonymous"></script>
+  <!-- Custom Functions -->
+  <script type="text/javascript" src="js/functions.js">
+
+  </script>
 </body>
 
 </html>
