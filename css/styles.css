@@ -5,13 +5,18 @@ body{
 }
 
 button{
-  background-color: #beebe9;
+  background-color: #3b6978;
   border: 0;
   margin-left: 0;
 }
 
+ul{
+  list-style-type: none;
+}
+
 #main{
-  background-color: #beebe9;
+  background-color: #3b6978;
+  color: #f4f4f4;
   float: left;
   box-shadow: 2px 2px 2px #84a9ac;
   margin-bottom: 20px;
@@ -19,6 +24,18 @@ button{
 
 .main-img{
   width: 410px;
+  border-bottom: 1px solid #758184;
+}
+
+.main-hr{
+  background-color: #e7dfd5;
+  opacity: 0.45;
+}
+
+.main-name{
+  margin-top: 10px;
+  text-align: center;
+  font-family: "Playfair Display", serif;
 }
 
 .main-content{
@@ -35,6 +52,11 @@ button{
 .main-flags{
   width: 35px;
   margin: 10px;
+  background-color: #3b6978;
+}
+
+.fa-info-circle{
+  color: #fffdf9;
 }
 
 .slidecontainer {
@@ -113,6 +135,12 @@ button{
 .education-icon{
   position: absolute;
   padding-left: 1rem;
+}
+
+.education-logo{
+  width: 50px;
+  float: left;
+  padding: 5px;
 }
 
 .education-content{
